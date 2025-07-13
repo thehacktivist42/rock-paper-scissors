@@ -32,19 +32,3 @@ function playRound(humanChoice, computerChoice) {
         }
     }
 }
-
-function playGame() {
-    for (let i = 0; i < 5; i++) {
-        playRound(getHumanChoice(), getComputerChoice());
-    }
-    if (humanScore > computerScore) {
-        alert("Congratulations! You have won the game!");
-    }
-    else if (humanScore == computerScore) {
-        alert("The game has been tied.");
-    }
-    else {
-        alert("Hard luck! The computer has won the game!");
-    }
-}
-playGame()
