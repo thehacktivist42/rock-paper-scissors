@@ -15,3 +15,19 @@ function getHumanChoice() {
 }
 
 let humanScore = 0, computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+    let humanChoice = humanChoice.toLowerCase();
+    if (humanChoice == computerChoice) {
+        console.log("Round tied!");
+    }
+    else {
+        if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "scissors" && computerChoice == "paper") || (humanChoice == "paper" && computerChoice == "rock")) {
+            console.log("You win! The computer loses!");
+        }
+        else {
+            console.log("Hard luck! Y")
+        }
+    }
+
+}
