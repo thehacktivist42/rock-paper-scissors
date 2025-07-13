@@ -17,7 +17,7 @@ function getHumanChoice() {
 let humanScore = 0, computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
-    let humanChoice = humanChoice.toLowerCase();
+    humanChoice = humanChoice.toLowerCase();
     if (humanChoice == computerChoice) {
         console.log("Round tied!");
     }
@@ -34,7 +34,7 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    for (i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         playRound(getHumanChoice(), getComputerChoice());
     }
     if (humanScore > computerScore) {
@@ -47,3 +47,4 @@ function playGame() {
         alert("Hard luck! The computer has won the game!");
     }
 }
+playGame()
